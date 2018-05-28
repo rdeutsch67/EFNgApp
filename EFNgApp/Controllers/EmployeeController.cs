@@ -31,10 +31,12 @@ namespace EFNgApp.Controllers
             return objemployee.GetEmployeeData(id);
         }
 
+
         [HttpPut]
         [Route("api/Employee/Edit")]
         public int Edit([FromBody]TblEmployee employee)
         {
+            /* test */
             return objemployee.UpdateEmployee(employee);
         }
 
