@@ -38,6 +38,7 @@ namespace EFNgApp.Controllers
         {
             /* test */
             return objemployee.UpdateEmployee(employee);
+            return objemployee.DeleteEmployee(employee);
         }
 
         [HttpDelete]
