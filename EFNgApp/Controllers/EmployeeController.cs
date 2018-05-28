@@ -35,10 +35,8 @@ namespace EFNgApp.Controllers
         [HttpPut]
         [Route("api/Employee/Edit")]
         public int Edit([FromBody]TblEmployee employee)
-        {
-            /* test */
-            return objemployee.UpdateEmployee(employee);
-            return objemployee.DeleteEmployee(employee);
+        {            
+            return objemployee.UpdateEmployee(employee);         
         }
 
         [HttpDelete]
